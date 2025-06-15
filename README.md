@@ -3,7 +3,7 @@ WORKSHOP_TITLE
 
 ### posit::conf(2025)
 
-by Katie Masiello, and Ryan Johnson
+by Jenny Bryan
 
 -----
 
