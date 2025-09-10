@@ -9,15 +9,15 @@ by Jenny Bryan
 
 :spiral_calendar: September 16, 2025  
 :alarm_clock:     09:00 - 17:00  
-:hotel:           Room TBD  
-:writing_hand:    Shortlink TBD
+:hotel:           Grand Hall East B  
+:writing_hand:    [pos.it/pkg-dev-conf25](https://pos.it/pkg-dev-conf25)
 
 -----
 
 ## Schedule
 
 | Time          | Topics         | Slides | Prompts |
-| :------------ | :------------- | :------ | :------ |
+| :------------ | :------------- | :----- | :------ |
 | 09:00 - 10:30 | Kick the tires of your setup<br>Core workflows<br>Let me GitHub search that for you | [slides](materials/pkg-dev-posit-conf-2024-introduction.pdf) | [prompts](github-code-search-prompts.md)|
 | 10:30 - 11:00 | *Coffee break* | | |
 | 11:00 - 12:30 | Testing        | [slides](materials/pkg-dev-posit-conf-2024-testing.pdf) | [prompts](testing-prompts.md) |
@@ -54,7 +54,9 @@ There will be chunks of time for you to do exercises throughout the day.
 We will make sure there are good options that allow all participants to engage with the material.
 But if you have your own package(s), you are welcome to use these times to apply what we're learning, e.g. about testing or documentation, in your personal packages.
 
-This will be an interactive 1-day workshop, and we will be using the RStudio IDE to work through the materials.
+This will be an interactive 1-day workshop, and we will be using Positron to work through the materials.
+We might also spend some time in RStudio.
+You are welcome to use a different development environment, but the instructor and TA likely won't be able to provide support for alternative IDEs.
 
 ## Audience
 
@@ -117,9 +119,8 @@ install.packages("cli", type = "source")
 
 ## Instructor and TAs
 
-* Jenny Bryan (instructor) is a software engineer at Posit, usually working on the tidyverse packages or its supporting ecosystem, and is a member of the R Foundation. She recently co-authored the second edition of [the R Packages book](https://r-pkgs.org/) and is the maintainer of the [devtools](https://devtools.r-lib.org/) and [usethis](https://usethis.r-lib.org/) packages (among others).
-* Tomasz Kalinowski (TA) is a software engineer at Posit and a member of the [mlverse](https://github.com/mlverse) team, contributing to the development of open-source machine learning software. He co-authored ["Deep Learning with R"](https://www.manning.com/books/deep-learning-with-r-second-edition) and maintains several R packages, including [reticulate](https://rstudio.github.io/reticulate/), [tensorflow](https://tensorflow.rstudio.com), and [keras3](https://keras3.posit.co).
-* Kevin Ushey (TA) is a software engineer at Posit and member of the RStudio IDE development team. He is the maintainer of the [renv](https://rstudio.github.io/renv/) package, and has contributed to a large number of packages in the R ecosystem.
+* Jenny Bryan (instructor) is a software engineer at Posit. Lately she's been working a lot on Positron, Posit's new data science IDE, but historically she's been focused on the tidyverse packages or its supporting ecosystem. Jenny is a member of the R Foundation. She co-authored the second edition of [the R Packages book](https://r-pkgs.org/) and is the maintainer of the [devtools](https://devtools.r-lib.org/) and [usethis](https://usethis.r-lib.org/) packages (among others).
+* Lionel Henry (TA) is a software engineer at Posit. Lately he's been working on the Positron team and, especially, on the [ark R kernel](https://github.com/posit-dev/ark) and the [Air formatter](https://posit-dev.github.io/air/). Like Jenny, before Positron, Lionel spent years focused on the tidyverse ecosystem and is the maintainer of [rlang](https://rlang.r-lib.org/) (among others).
 
 -----
 
