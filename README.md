@@ -46,7 +46,6 @@ This list of topics is indicative of what we will cover:
 -   Self-help: the power of GitHub code search and small experiments
 -   Testing: the testthat package and the philosophy of writing tests as you go (vs. "later")
 -   Documentation: function documentation, vignettes, and website
--   Data: internal data vs. data available to your user
 -   GitHub Actions for automatically checking your package and building/deploying a pkgdown website
 -   User interface: how to provide beautiful, informative messages with the cli package
 
