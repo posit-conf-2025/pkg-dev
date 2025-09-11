@@ -123,6 +123,13 @@ install.packages("cli", type = "source")
 * Jenny Bryan (instructor) is a software engineer at Posit. Lately she's been working a lot on Positron, Posit's new data science IDE, but historically she's been focused on the tidyverse packages or its supporting ecosystem. Jenny is a member of the R Foundation. She co-authored the second edition of [the R Packages book](https://r-pkgs.org/) and is the maintainer of the [devtools](https://devtools.r-lib.org/) and [usethis](https://usethis.r-lib.org/) packages (among others).
 * Lionel Henry (TA) is a software engineer at Posit. Lately he's been working on the Positron team and, especially, on the [ark R kernel](https://github.com/posit-dev/ark) and the [Air formatter](https://posit-dev.github.io/air/). Like Jenny, before Positron, Lionel spent years focused on the tidyverse ecosystem and is the maintainer of [rlang](https://rlang.r-lib.org/) (among others).
 
+## Logistical details
+
+* Gender-neutral bathrooms: LL2 - Next to Chicago A
+* Meditation/Prayer room: LL2 - Chicago A
+* Mother’s Room / Lactation Room: LL2 - Chicago B
+* Code of conduct: <https://posit.co/code-of-conduct/>
+
 -----
 
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is
