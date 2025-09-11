@@ -53,8 +53,8 @@ There will be chunks of time for you to do exercises throughout the day.
 We will make sure there are good options that allow all participants to engage with the material.
 But if you have your own package(s), you are welcome to use these times to apply what we're learning, e.g. about testing or documentation, in your personal packages.
 
-This will be an interactive 1-day workshop, and we will be using Positron to work through the materials.
-We might also spend some time in RStudio.
+This will be an interactive 1-day workshop.
+The instructor will mostly be using [Positron](https://positron.posit.co/) to work through the materials, but you'll probably also see some use of RStudio.
 You are welcome to use a different development environment, but the instructor and TA likely won't be able to provide support for alternative IDEs.
 
 ## Audience
@@ -67,7 +67,7 @@ This course is for you if you:
 -   Are interested in using devtools + Positron for package development.
 -   Are at least curious about Git/GitHub. We won't have time to teach this explicitly, but you will certainly see Git/GitHub through out the day.
 
-We expect most participants will have more package development experience than the minimum described above.
+We expect most participants will have more package development and Git/GitHub experience than the minimum described above.
 We typically see a real mix of backgrounds in workshops such as this.
 Participants at either extreme (very new or very experienced) should anticipate that they'll hear questions and discussion aimed at the other end of the experience spectrum and that's OK.
 
