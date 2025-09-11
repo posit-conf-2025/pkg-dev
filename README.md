@@ -16,6 +16,8 @@ by Jenny Bryan
 
 ## Schedule
 
+*Slides aren't here yet, but are coming soon!*
+
 | Time          | Topics         | Slides | Prompts |
 | :------------ | :------------- | :----- | :------ |
 | 09:00 - 10:30 | Kick the tires of your setup<br>Core workflows<br>Let me GitHub search that for you | [slides](materials/pkg-dev-posit-conf-2024-introduction.pdf) | [prompts](github-code-search-prompts.md)|
