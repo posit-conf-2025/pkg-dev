@@ -18,13 +18,17 @@ Fix that. `usethis::rename_files()` might help, depending on where you're starti
 
 ## Setup keyboard shortcuts for common testing "moves"
 
-Here's a good resource on customizing RStudio keyboard shortcuts:
-https://docs.posit.co/ide/user/ide/guide/productivity/custom-shortcuts.html
-
-devtools addins that are nice to have keybindings for:
+Functions that are nice to have keybindings for:
 
 * `devtools::test_active_file()`: consider Cmd/Ctrl + T
 * `devtools::test_coverage_active_file()`: consider Cmd/Ctrl + R
+* `usethis::use_r()`
+* `usethis::ust_test()`
+
+Here's a good resource on customizing RStudio keyboard shortcuts:
+https://docs.posit.co/ide/user/ide/guide/productivity/custom-shortcuts.html
+
+For Positron users, adapt any ideas you like from [Emil Hvitfeldt's blog post on Positron keybindings](https://emilhvitfeldt.com/post/positron-key-bindings/#package-development).
 
 ## Learn if tests are leaking state
 
@@ -38,13 +42,36 @@ Ideas for what to look for:
 
 Search for `set_state_inspector()` if you want to see organic usage and get more ideas of which aspects of state people check for.
 
+This will surface tests that change options or env vars:
+
+```r
+set_state_inspector(function() {
+  list(
+    options = options(),
+    envvars = Sys.getenv()
+  )
+})
+```
+
+More possibilities, relating to dangling connections and files:
+
+```r
+set_state_inspector(function() {
+  list(
+    connections = nrow(showConnections()),
+    temp = dir(tempdir()),
+    home = dir("~")
+  )
+})
+```
+
 ## Look for `library()` and `source()` calls in a test suite
 
 Use GitHub code search to look for CRAN packages that call `library()` or `source()` inside their testthat test suite.
 
 Grab a local copy of such a package and see if you can refactor it to use more official testthat methods to achieve whatever it is they're trying to do.
 
-*You could conceivably make a pull request to such a package, but it's risky to offer this sort of unsolicited feedback. Proceed with caution.*
+*You could conceivably make a pull request to such a package, but it's risky to offer this sort of unsolicited feedback. Proceed with caution and tact.*
 
 ## Look for test helpers
 
@@ -66,3 +93,7 @@ Do the same but for test setup files, e.g., `tests/testthat/setup.R`.
 The function `test_path()` is a helpful and robust way to build a path to a file inside a package's test directory.
 
 Search for uses of `test_path()` and see what it's being used for.
+
+Can you find direct usage of `test_path()` in a test?
+
+Can you find a test helper function that uses `test_path()`, where the helper is used in many tests?
