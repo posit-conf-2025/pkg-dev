@@ -3,7 +3,7 @@
 If you have your own package, you could apply some of these moves we discussed:
 
 * Add documentation, using roxygen2, if you have none.
-* Add a README.Rmd if you don't have a README. Remember to render to README.md.
+* Add a README.Rmd if you don't have a README. Remember to render to README.md using `devtools::build_readme()`.
 * If you have a static README.md, convert it to use README.Rmd.
 * Add your first vignette or article.
 * Beef up your examples.
@@ -48,4 +48,5 @@ Use your GitHub code search skills to find and study some of the special techniq
 * How prevalent is `README.Rmd`? Hint: you might need to look in `.Rbuildignore` to detect this, because only `README.md` will make it into the source package on CRAN.
 * Can you find folks using the `vignette("things", package = "somepkg")` in help topics? In vignettes?
 * Look for usage of `@examplesIf`. What sort of code do you see evaluated there, i.e. that controls whether the example should execute?
-* Look for packages that change the world in their examples. Do they restore the original state? You can't write a super precise search query for this, but you should be able to get somewhere.
+* Look for packages that change the world in their examples. Do they restore the original state? You can't write a super precise search query for this, but you should be able to get some hits pretty easily.
+* Can you find packages that use `eval = FALSE` or `eval` with a function call to execute vignette code conditionally?

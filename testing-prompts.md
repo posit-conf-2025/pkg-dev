@@ -20,15 +20,22 @@ Fix that. `usethis::rename_files()` might help, depending on where you're starti
 
 Functions that are nice to have keybindings for:
 
-* `devtools::test_active_file()`: consider Cmd/Ctrl + T
-* `devtools::test_coverage_active_file()`: consider Cmd/Ctrl + R
+* `devtools::test_active_file()`
+* `devtools::test_coverage_active_file()`
 * `usethis::use_r()`
 * `usethis::ust_test()`
 
 Here's a good resource on customizing RStudio keyboard shortcuts:
-https://docs.posit.co/ide/user/ide/guide/productivity/custom-shortcuts.html
+https://docs.posit.co/ide/user/ide/guide/productivity/custom-shortcuts.html.
+
+* `test_active_file()`: consider `Cmd/Ctrl + T`
+* `test_coverage_active_file()`: consider `Cmd/Ctrl + R`
 
 For Positron users, adapt any ideas you like from [Emil Hvitfeldt's blog post on Positron keybindings](https://emilhvitfeldt.com/post/positron-key-bindings/#package-development).
+
+* The keyboard shortcut landscape is much more crowded in Positron/VS Code, so many folks are adopting a *chord strategy*, i.e. using a prefix such as `Cmd + .` or `Cmd + '` as the opening move for an entire set of personal keybindings.
+* `test_active_file()`: consider `Cmd + ' Cmd + T` or `Cmd + . Cmd + Shift + T`
+* `test_coverage_active_file()`: consider `Cmd + ' Cmd + C`
 
 ## Learn if tests are leaking state
 

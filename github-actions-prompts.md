@@ -5,6 +5,7 @@ If you have your own package and it's on GitHub:
 * `use_github_action()` and choose "check-standard". This is a good idea for anyone / any package.
 * If you use testthat for testing, do `use_github_action()` and choose "test-coverage".
 * `use_pkgdown_github_pages()` will start to build and deploy a pkgdown site.
+* If you start using Air to format R code, setup one of the Air GHA workflows for constantly checking that your code is styled correctly.
 
 ## regexcite
 
@@ -12,7 +13,7 @@ If you don't have your own package, but you did fork and clone regexcite earlier
 
 ## libminer
 
-If you don't have your own package, but you did fork and clone libminer earlier today, you can **update** its GHA workflows, which need a refresh (they were configured a year ago).
+If you don't have your own package, but you did fork and clone libminer earlier today, you can **update** the GHA workflows in your fork, which need a refresh (they were configured a while ago).
 
 First, visit the Actions tab of your fork. You'll probably see a message like this:
 
