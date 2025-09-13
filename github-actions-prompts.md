@@ -13,9 +13,16 @@ If you don't have your own package, but you did fork and clone regexcite earlier
 
 ## libminer
 
-If you don't have your own package, but you did fork and clone libminer earlier today, you can **update** the GHA workflows in your fork, which need a refresh (they were configured a while ago).
+If you don't have your own package, but you did fork and clone libminer or stringb earlier today, you can **update or add ** GHA workflows in your fork. The libminer package has GHA workflows, but they are stale. The stringb package does not have GHA workflows yet.
 
-First, visit the Actions tab of your fork. You'll probably see a message like this:
+Recall these methods of getting the package source code on your computer:
+
+* `usethis::create_from_github("ateucher/libminer")` (recommended)
+* `usethis::use_course("ateucher/libminer")` (if you are not a Git/GitHub user)
+* `usethis::create_from_github("hadley/stringb")` (recommended)
+* `usethis::use_course("hadley/stringb")` (if you are not a Git/GitHub user)
+
+First, visit the Actions tab of your fork. You might see a message like this:
 
 > Workflows aren’t being run on this forked repository
 > 
@@ -23,7 +30,7 @@ First, visit the Actions tab of your fork. You'll probably see a message like th
 
 Go ahead and click on "I understand my workflows, go ahead and enable them".
 
-Now, locally, you can overwrite the GHA YAML files, to reflect the current workflows we're using:
+Now, locally, you can overwrite/write the GHA YAML files, to reflect the current workflows we're using:
 
 * `use_github_action("check-standard")`. Look over the changes, commit, and push.
 * `use_github_action("pkgdown")`. Look over the changes, commit, and push.
